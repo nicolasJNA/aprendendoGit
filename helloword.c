@@ -19,5 +19,7 @@ indice--
 }
 vetor[indice] = copia;
 }
+
+imprimir(vetor,10);
 return 0;
 }
