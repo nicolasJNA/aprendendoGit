@@ -1,18 +1,23 @@
-#include <stdio.h>
-#include <graphics.h>
-#include <string.h>
+//ordenação por inseção
 
-void convergen(int line, char *message);
-int main(){
-
-  return 0;
+void imprimir(int vetor, int tamanho){
+for(int a =0; a < tam; a++){
+	printf("%d ", vetor[a]);
 }
-void convergen(int line, char *message){
-  int i, j;
-  for(i =1; j=strlen(message); i<j; i++; j--){
-    _settextposition(line, i);
-    printf("%c", message[i - 1]);
-    _settextposition(line, j);
-    printf("%c", message[j - 1]);
-  }
+}
+#include <stdio.h>
+int main(){
+int vetor[10] = {5,6,4,8,7,2,1,16,3,4}
+int copia, indice;
+
+for(int a =1; a<10;a++){
+indice = a;
+copia = vetor[a];
+while(indice > 0 && copia < vetor[indice -1]){
+vetor[indice] = vetor[indice  1];
+indice--
+}
+vetor[indice] = copia;
+}
+return 0;
 }
