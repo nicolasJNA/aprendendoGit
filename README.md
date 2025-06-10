@@ -1,2 +1,2 @@
 # aprendendoGit
-tutorial-decomo-usar-git
+tutorial-de-como-usar-git
